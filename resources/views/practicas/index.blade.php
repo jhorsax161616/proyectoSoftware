@@ -3,9 +3,9 @@
 @section('title', 'Practicas')
 
 @section('content')
-    <h1 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Bienvenido a la Gestion de Prácticas Preprofesionales</h1>
+    <h1 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight pb-3">Bienvenido a la Gestion de Prácticas Preprofesionales</h1>
 
-    <a href="{{route('practicas.create')}}" class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight hover:bg-gray-400">Nuevo Registro</a>
+    <a href="{{route('practicas.create')}}" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400">Nuevo Registro</a>
 
     <ul role="list" class="p-6 divide-y divide-slate-200">
         @foreach ($practicas as $practica)

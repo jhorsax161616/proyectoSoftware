@@ -27,4 +27,6 @@ Route::controller(PracticaController::class)->group(function() {
     Route::get('practicas/{practica}', 'show')->name('practicas.show');
     Route::get('practicas/{practica}/edit', 'edit')->name('practicas.edit');
     Route::put('practicas/{practica}', 'update')->name('practicas.update');
+    // Ruta para eliminar
+    Route::get('practicas/{practica}/delete', 'destroy')->name('practicas.destroy');
 });

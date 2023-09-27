@@ -61,4 +61,14 @@ class PracticaController extends Controller
 
         return redirect()->route('practicas.show', $practica);
     }
+
+    // Funcion para borrar un registro
+    public function destroy(Practica $practica) {
+        // Encuentra la práctica por su ID y elimínala
+        $practica->delete();
+    
+        // Redirige al usuario a la página de lista de prácticas (o cualquier otra página deseada)
+        return redirect()->route('practicas.index');
+    }
+    
 }
